@@ -11,7 +11,15 @@
         <meta name="apple-mobile-web-app-capable" content="yes" />
 		<link rel="apple-touch-startup-image" href="visuels/startup_image.png" />
 		<title>DCVP</title>
+        <script src="jquery_v1.8.3.min.js"></script>
         <script src="phonegap.js"></script>
+        <script type="text/javascript">		
+            document.addEventListener("deviceready", function(){
+              if(navigator.network.connection.type == Connection.NONE){
+                $("body").empty().append('<img src="no_network.png" onClick="window.location.reload()" />');
+              }
+            });
+		</script>
         <!-- 
         <script type="text/javascript" src="js/jquery.mobile-1.2.0/jquery.mobile-1.2.0.min.js"></script>
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
