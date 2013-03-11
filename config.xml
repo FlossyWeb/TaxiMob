@@ -6,7 +6,7 @@
     <name>DCVP</name>
 
     <description>
-        DCVP TaxiMob version Artisants taxis.
+        DCVP TaxiMob version Artisans taxis.
     </description>
 
     <author href="http://flossyweb.com" email="contact@flossyweb.com">
@@ -23,7 +23,7 @@
 	<feature name="http://api.phonegap.com/1.0/network"/>
 	<feature name="http://api.phonegap.com/1.0/notification"/>
 
-    <preference name="phonegap-version" value="2.1.0" />
+    <preference name="phonegap-version" value="2.3.0" />
     <preference name="orientation"      value="default" />
     <preference name="target-device"    value="universal" />
     <preference name="fullscreen"       value="false" />
@@ -34,5 +34,6 @@
 	<gap:splash src="splash.png" />
 	
 	<access origin="http://taxibleuservices.com" subdomains="true" />
+	<access origin="https://ssl14.ovh.net/~taxibleu/" subdomains="true" />
 
 </widget>
